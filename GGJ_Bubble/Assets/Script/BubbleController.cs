@@ -6,7 +6,7 @@ public class BubbleController : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
-    private bool frozen = false;
+    public bool frozen = false;
     private float frezeEndTime;
 
     public LayerMask wallLayer;
