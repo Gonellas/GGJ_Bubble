@@ -14,6 +14,8 @@ public class FreezePowerUp : MonoBehaviour
             {
                 bubbleController.ActivateFreezePowerUp(duracion);
             }
+
+            Destroy(gameObject); 
         }
     }
 }
