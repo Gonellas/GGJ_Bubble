@@ -7,9 +7,8 @@ public class GameManager : MonoBehaviour
     // Set Instance
     private static GameManager instance = null;
 
-    //Rotation variables
+    //Gravity variables
     public Transform cameraTransform;
-    public float rotatioSpeed = 50f;
 
     //Bubble physics variables
     public float gravityStrength = 9.8f;
@@ -26,15 +25,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        
     }
 
     private void Update()
     {
-        //Main Mechanic
-        RotateCamera();
-
-
     }
     private void FixedUpdate()
     {
@@ -49,16 +43,4 @@ public class GameManager : MonoBehaviour
         Physics2D.gravity = gravityDirection * gravityStrength;
     }
 
-
-
-    private void RotateCamera()
-    {
-        float horizontalInput = Input.GetAxis("Horizontal");
-
-        if(cameraTransform != null)
-        {
-            cameraTransform.Rotate(Vector3.forward, horizontalInput * rotatioSpeed * Time.deltaTime);
-        }
-    }
-    
 }
