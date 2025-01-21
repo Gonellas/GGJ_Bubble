@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacles
+  - Paredes
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Paredes
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -41,4 +42,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Paredes
+    uniqueID: 861466363
     locked: 0
