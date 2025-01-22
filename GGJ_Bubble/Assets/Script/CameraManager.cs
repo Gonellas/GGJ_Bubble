@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-
+    public Transform bubbleTransform;
     public Transform cameraTransform;
+    public Rigidbody2D bubbleRigidbody;
     public float rotatioSpeed = 50f;
     public float returnSpeed = 100f;
 
@@ -16,6 +17,14 @@ public class CameraManager : MonoBehaviour
     void Start()
     {
         
+    }
+
+    private void FixedUpdate()
+    {
+        if (bubbleTransform != null && bubbleRigidbody != null)
+        {
+            bubbleRigidbody.MoveRotation(cameraTransform.eulerAngles.z);
+        }
     }
 
     void Update()
@@ -44,6 +53,10 @@ public class CameraManager : MonoBehaviour
             {
                 cameraTransform.rotation = Quaternion.Euler(0, 0, 0);
             }
+           /* if (bubbleTransform != null) 
+            {
+                bubbleTransform.rotation = cameraTransform.rotation;
+            }*/
         }
     }
 
@@ -60,6 +73,11 @@ public class CameraManager : MonoBehaviour
             {
                 //isReturningToOrigin = false;
                 cameraTransform.rotation = targetRotation;
+
+               /* if (bubbleTransform != null)
+                {
+                    bubbleTransform.rotation = targetRotation;
+                }*/
             }
         }
     }

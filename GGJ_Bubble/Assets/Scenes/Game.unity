@@ -5492,7 +5492,7 @@ MonoBehaviour:
   cameraTransform: {fileID: 1990262155}
   bubbleTransform: {fileID: 1395159339}
   bubbleRigidBody: {fileID: 1395159337}
-  bubbleCollider: {fileID: 1395159335}
+  bubbleCollider: {fileID: 0}
   bubblePoint:
   - {fileID: 0}
   - {fileID: 139638578}
@@ -5820,11 +5820,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1395159335 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 27628442764513989, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
-  m_PrefabInstance: {fileID: 1893158579}
-  m_PrefabAsset: {fileID: 0}
 --- !u!50 &1395159337 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 6012229273618026584, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
@@ -6665,6 +6660,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1876399106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5457494776225195981, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
+  m_PrefabInstance: {fileID: 1893158579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1876399110
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876399106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be82d421fe0a7fe4cb6ea287c363ba63, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &1876399111
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876399106}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1001 &1893158579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6673,14 +6729,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2502956688215823122, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2502956688215823122, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2502956688215823122, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.38
@@ -6725,22 +6773,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: PurifyingBubble
       objectReference: {fileID: 0}
-    - target: {fileID: 5457494776225195981, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 7894354863304261151, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3f6f827d981800247b416c25816a8ba0, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7894354863304261151, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
       propertyPath: m_DrawMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7894354863304261151, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5457494776225195981, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1876399110}
+    - targetCorrespondingSourceObject: {fileID: 5457494776225195981, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1876399111}
   m_SourcePrefab: {fileID: 100100000, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
 --- !u!1 &1990262152
 GameObject:
@@ -6847,7 +6901,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489f08f1a216b704f9c87ba8e35679c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bubbleTransform: {fileID: 1395159339}
   cameraTransform: {fileID: 1990262155}
+  bubbleRigidbody: {fileID: 1395159337}
   rotatioSpeed: 50
   returnSpeed: 100
   isReturningToOrigin: 0
