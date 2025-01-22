@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class BubbleController : MonoBehaviour
 {
+    public Animator animator;
+    public Rigidbody2D bubbleRigidbody;
+    public CircleCollider2D bubbleCollider;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     public bool frozen = false;
@@ -15,9 +18,7 @@ public class BubbleController : MonoBehaviour
     public int lives = 3;
     public float bounceForce = 1f;
 
-    private Animator animator;
-    private Rigidbody2D bubbleRigidbody;
-    private CircleCollider2D bubbleCollider;
+
 
     public float[] colliderSizes = {0.5f,0.25f,0.1f};
 

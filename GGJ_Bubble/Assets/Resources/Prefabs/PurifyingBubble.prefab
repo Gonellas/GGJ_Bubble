@@ -127,12 +127,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd743bb7f8cbd1a4abd98491b4a306f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 8517308050434235023}
+  bubbleRigidbody: {fileID: 6012229273618026584}
+  bubbleCollider: {fileID: 4464167159285502038}
   frozen: 0
   wallLayer:
     serializedVersion: 2
     m_Bits: 0
   lives: 3
-  bounceForce: 1
+  bounceForce: 0.2
   colliderSizes:
   - 0.5
   - 0.25
