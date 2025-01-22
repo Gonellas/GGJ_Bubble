@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacles
   - Paredes
+  - Bubbles
   layers:
   - Default
   - TransparentFX
