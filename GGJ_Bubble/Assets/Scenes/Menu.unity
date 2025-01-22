@@ -2399,6 +2399,12 @@ MonoBehaviour:
   _sfxVolume: 1
   _soundList:
   - {fileID: 8300000, guid: bd233274688406b409d34a144aae4b19, type: 3}
+  - {fileID: 8300000, guid: 4524e95d711a43c4a9f0a8d4d46fe1c4, type: 3}
+  - {fileID: 8300000, guid: 055ab76790c4f1748a6e92510f99d512, type: 3}
+  - {fileID: 8300000, guid: d206aee3265139e40805ae5bfe2ed078, type: 3}
+  - {fileID: 8300000, guid: 9bdd3b5a2b2305445918249129ab117a, type: 3}
+  - {fileID: 8300000, guid: ff0d7255ff5d9de4eb575c575d8d4659, type: 3}
+  - {fileID: 8300000, guid: eb5b4e1141baedf4cb09a282b786c477, type: 3}
   _firstAudioSourceIsPlaying: 0
 --- !u!1 &1859760732
 GameObject:

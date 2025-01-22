@@ -8,7 +8,8 @@ public enum SoundType
     BounceSFX,
     IcePUSFX,
     TPSFX,
-    WindSFX
+    WindSFX,
+    LvlTheme
 }
 
 public class AudioManager : MonoBehaviour
