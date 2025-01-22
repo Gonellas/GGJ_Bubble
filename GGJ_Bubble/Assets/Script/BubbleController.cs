@@ -8,6 +8,8 @@ public class BubbleController : MonoBehaviour
     public Animator animator;
     public Rigidbody2D bubbleRigidbody;
     public CircleCollider2D bubbleCollider;
+
+
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     public bool frozen = false;
