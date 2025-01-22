@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     public Transform cameraTransform;
     public Transform bubbleTransform;
+    public Rigidbody2D bubbleRigidBody;
+    public Collider2D bubbleCollider;
 
     public Transform[] bubblePoint;
     public Transform[] cameraPoint;
@@ -40,6 +42,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if (bubbleRigidBody == null) bubbleRigidBody = GetComponent<Rigidbody2D>();
+        if (bubbleCollider == null) bubbleCollider = GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -60,6 +64,10 @@ public class GameManager : MonoBehaviour
     private IEnumerator TransitionToNextLevel()
     {
         isTransitioning = true;
+        //Desactivamos fisicas de la burbuja
+        bubbleRigidBody.velocity = Vector3.zero;
+        bubbleRigidBody.isKinematic = true;
+        bubbleCollider.enabled = false;
 
         //Enderezamos la camara asheeee.
         cameraManager.TriggerReturnToOrigin();
@@ -78,7 +86,6 @@ public class GameManager : MonoBehaviour
         Vector3 bubbleStartPos = bubbleTransform.position;
         Vector3 bubbleTargetPos = nextBubblePoint.position;
 
-
         float elapsedTime = 0f;
         while (elapsedTime < transitionDuration)
         {
@@ -93,6 +100,11 @@ public class GameManager : MonoBehaviour
         //Aseguramos que la camara y bubuja este en la posicion objetivo
         cameraTransform.position = cameraTargetPos;
         bubbleTransform.position = bubbleTargetPos;
+
+        //Activamos fisicas de la burbuja
+
+        bubbleRigidBody.isKinematic = false;
+        bubbleCollider.enabled = true;
         
         //Actulizar nivel actual
         currentLevel++;

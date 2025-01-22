@@ -5491,6 +5491,8 @@ MonoBehaviour:
   cameraManager: {fileID: 1990262156}
   cameraTransform: {fileID: 1990262155}
   bubbleTransform: {fileID: 1395159339}
+  bubbleRigidBody: {fileID: 1395159337}
+  bubbleCollider: {fileID: 1395159335}
   bubblePoint:
   - {fileID: 0}
   - {fileID: 139638578}
@@ -5818,6 +5820,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1395159335 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 27628442764513989, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
+  m_PrefabInstance: {fileID: 1893158579}
+  m_PrefabAsset: {fileID: 0}
 --- !u!50 &1395159337 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 6012229273618026584, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
