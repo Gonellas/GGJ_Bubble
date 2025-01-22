@@ -10,7 +10,7 @@ public class CameraManager : MonoBehaviour
     public float rotatioSpeed = 50f;
     public float returnSpeed = 100f;
 
-    private bool isReturningToOrigin = false;
+    public bool isReturningToOrigin = false;
 
 
     void Start()
@@ -58,7 +58,7 @@ public class CameraManager : MonoBehaviour
 
             if (Quaternion.Angle(currentRotation, targetRotation) < 0.1f)
             {
-                isReturningToOrigin = false;
+                //isReturningToOrigin = false;
                 cameraTransform.rotation = targetRotation;
             }
         }
