@@ -128,8 +128,17 @@ public class BubbleController : MonoBehaviour
     }
     private void BounceAway(Vector2 collisionNormal)
     {
-        bubbleRigidbody.velocity = Vector2.zero;
-        bubbleRigidbody.AddForce(collisionNormal * bounceForce, ForceMode2D.Impulse);
+        if (bubbleRigidbody != null)
+        {
+            bubbleRigidbody.velocity = Vector2.zero;
+
+            // Aplicar una fuerza de rebote
+            bubbleRigidbody.AddForce(collisionNormal * bounceForce, ForceMode2D.Impulse);
+        }
+        else
+        {
+            Debug.LogError("No se puede aplicar el rebote porque 'bubbleRigidbody' es null.");
+        }
     }
     
 
