@@ -12,6 +12,8 @@ public class Portal : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.transform.position = destination.position;
+
+            AudioManager.instance.PlaySFX(SoundType.TPSFX, 0.4f);
         }
     }
 }

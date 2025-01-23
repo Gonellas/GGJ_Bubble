@@ -5758,6 +5758,62 @@ CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 4464167159285502038, guid: 04b49e02f245c214c9c4e579f0eca82c, type: 3}
   m_PrefabInstance: {fileID: 1008947708}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1130071321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1130071323}
+  - component: {fileID: 1130071322}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1130071322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130071321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4412d16323d44b408ed3e3b93c58663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicVolume: 0.2
+  _sfxVolume: 3
+  _soundList:
+  - {fileID: 8300000, guid: bd233274688406b409d34a144aae4b19, type: 3}
+  - {fileID: 8300000, guid: 4524e95d711a43c4a9f0a8d4d46fe1c4, type: 3}
+  - {fileID: 8300000, guid: 055ab76790c4f1748a6e92510f99d512, type: 3}
+  - {fileID: 8300000, guid: d206aee3265139e40805ae5bfe2ed078, type: 3}
+  - {fileID: 8300000, guid: 9bdd3b5a2b2305445918249129ab117a, type: 3}
+  - {fileID: 8300000, guid: ff0d7255ff5d9de4eb575c575d8d4659, type: 3}
+  - {fileID: 8300000, guid: 438d15ff4804a9c4aa0f195e04033589, type: 3}
+  _firstAudioSourceIsPlaying: 0
+  _menuScene: 0
+--- !u!4 &1130071323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130071321}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.0674424, y: 2.477215, z: -23.65789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1177782209
 GameObject:
   m_ObjectHideFlags: 0
@@ -6450,7 +6506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1695751973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6532,7 +6588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windDirection: {x: 0, y: -1}
   windStrength: 1.5
-  bubbleRigidBody: {fileID: 0}
+  bubbleRigidBody: {fileID: 1008947709}
 --- !u!61 &1695751976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6850,3 +6906,4 @@ SceneRoots:
   - {fileID: 1579960944}
   - {fileID: 139638578}
   - {fileID: 273957552}
+  - {fileID: 1130071323}

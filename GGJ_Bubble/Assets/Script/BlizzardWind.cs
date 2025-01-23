@@ -25,6 +25,12 @@ public class BlizzardWind : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player")) 
+            AudioManager.instance.PlaySFX(SoundType.WindSFX, 2.5f);
+    }
+
     private void FixedUpdate()
     {
         if (isInArea)

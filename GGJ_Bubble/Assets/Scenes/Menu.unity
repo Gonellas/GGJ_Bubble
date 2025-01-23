@@ -2395,7 +2395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4412d16323d44b408ed3e3b93c58663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _musicVolume: 1
+  _musicVolume: 0.2
   _sfxVolume: 1
   _soundList:
   - {fileID: 8300000, guid: bd233274688406b409d34a144aae4b19, type: 3}
@@ -2404,8 +2404,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d206aee3265139e40805ae5bfe2ed078, type: 3}
   - {fileID: 8300000, guid: 9bdd3b5a2b2305445918249129ab117a, type: 3}
   - {fileID: 8300000, guid: ff0d7255ff5d9de4eb575c575d8d4659, type: 3}
-  - {fileID: 8300000, guid: eb5b4e1141baedf4cb09a282b786c477, type: 3}
+  - {fileID: 8300000, guid: 438d15ff4804a9c4aa0f195e04033589, type: 3}
   _firstAudioSourceIsPlaying: 0
+  _menuScene: 1
 --- !u!1 &1859760732
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,8 @@ public class FreezePowerUp : MonoBehaviour
                 bubbleController.ActivateFreezePowerUp(duracion);
             }
 
+            AudioManager.instance.PlaySFX(SoundType.IcePUSFX, 1f);
+
             Destroy(gameObject); 
         }
     }

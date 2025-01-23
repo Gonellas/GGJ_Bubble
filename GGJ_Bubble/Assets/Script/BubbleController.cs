@@ -20,8 +20,6 @@ public class BubbleController : MonoBehaviour
     public int lives = 3;
     public float bounceForce = 1f;
 
-
-
     public float[] colliderSizes = {0.5f,0.25f,0.1f};
 
     private void Start()
@@ -96,6 +94,7 @@ public class BubbleController : MonoBehaviour
         else
         {
             //GameOVer
+            AudioManager.instance.PlaySFX(SoundType.BurstSFX, 1f);
             Destroy(gameObject);
         }
     }
@@ -127,6 +126,7 @@ public class BubbleController : MonoBehaviour
             Debug.LogError("CircleCollider2D no asignado en la burbuja.");
         }
 
+        AudioManager.instance.PlaySFX(SoundType.BounceSFX, 1f);
        
     }
     private void BounceAway(Vector2 collisionNormal)

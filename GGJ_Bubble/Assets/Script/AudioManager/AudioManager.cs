@@ -29,6 +29,8 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private bool _firstAudioSourceIsPlaying;
 
+    [SerializeField] private bool _menuScene;
+
     public SoundType SoundType => _soundType;
 
     public static AudioManager Instace
@@ -77,7 +79,8 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayMusic(SoundType.MenuTheme, 1);
+        if(_menuScene == true) PlayMusic(SoundType.MenuTheme, 1);
+        else PlayMusic(SoundType.LvlTheme, 0);
     }
 
     public float GetMusicVolume()
