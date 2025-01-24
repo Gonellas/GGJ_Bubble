@@ -5550,7 +5550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &466989492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5705,7 +5705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!58 &922786347
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5949,7 +5949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4412d16323d44b408ed3e3b93c58663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _musicVolume: 0.2
+  _musicVolume: 0.1
   _sfxVolume: 3
   _soundList:
   - {fileID: 8300000, guid: bd233274688406b409d34a144aae4b19, type: 3}
@@ -5994,7 +5994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1177782210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6668,7 +6668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1695751973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6814,7 +6814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1813955954
 MonoBehaviour:
   m_ObjectHideFlags: 0

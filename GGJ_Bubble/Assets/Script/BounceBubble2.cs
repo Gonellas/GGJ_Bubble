@@ -18,6 +18,8 @@ using UnityEngine;
                     playerRb.velocity = Vector2.zero; 
                     playerRb.AddForce(bounceDirection * bounceForce, ForceMode2D.Impulse);
                 }
+
+                AudioManager.instance.PlaySFX(SoundType.BounceSFX, 0.8f);
             }
         }
 }

@@ -8,7 +8,7 @@ public class Menu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
-        AudioManager.instance.ChangeMusic(SoundType.LvlTheme, 0.7f);
+        AudioManager.instance.ChangeMusic(SoundType.LvlTheme, 0.35f);
     }
 
     public void ExitGame()

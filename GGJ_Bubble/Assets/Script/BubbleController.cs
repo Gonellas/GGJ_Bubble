@@ -126,7 +126,7 @@ public class BubbleController : MonoBehaviour
             Debug.LogError("CircleCollider2D no asignado en la burbuja.");
         }
 
-        AudioManager.instance.PlaySFX(SoundType.BounceSFX, 1f);
+        AudioManager.instance.PlaySFX(SoundType.BounceSFX, 0.8f);
        
     }
     private void BounceAway(Vector2 collisionNormal)
