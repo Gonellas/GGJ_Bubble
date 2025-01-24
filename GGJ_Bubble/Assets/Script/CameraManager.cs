@@ -13,11 +13,12 @@ public class CameraManager : MonoBehaviour
 
     public bool isReturningToOrigin = false;
 
+    public float rotationStep = 90f;
+    private bool isRotatingToAngle = false;
+    private Quaternion targetRotation;
+    public float rotationSpeedStep = 250f;
 
-    void Start()
-    {
-        
-    }
+
 
     private void FixedUpdate()
     {
@@ -29,15 +30,53 @@ public class CameraManager : MonoBehaviour
 
     void Update()
     {
-        if (!isReturningToOrigin)
+        if (!isReturningToOrigin && !isRotatingToAngle)
         {
             RotateCamera();
+            CheckQuickRotationInput(); 
         }
-        else
+        else if (isReturningToOrigin)
         {
             ReturnToOrigin();
         }
+        else if (isRotatingToAngle)
+        {
+            RotateToTargetAngle();
+        }
     }
+    //
+    private void CheckQuickRotationInput()
+    {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            StartQuickRotation(-rotationStep); // Hacia la derecha
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            StartQuickRotation(rotationStep); // Hacia la izquierda
+        }
+    }
+
+    private void StartQuickRotation(float angle)
+    {
+        isRotatingToAngle = true;
+        targetRotation = Quaternion.Euler(0, 0, cameraTransform.eulerAngles.z + angle);
+    }
+
+    private void RotateToTargetAngle()
+    {
+        if (cameraTransform != null)
+        {
+            cameraTransform.rotation = Quaternion.RotateTowards(cameraTransform.rotation, targetRotation, rotationSpeedStep * Time.deltaTime);
+
+            if (Quaternion.Angle(cameraTransform.rotation, targetRotation) < 0.1f)
+            {
+                cameraTransform.rotation = targetRotation;
+                isRotatingToAngle = false;
+            }
+        }
+    }
+    //
 
     private void RotateCamera()
     {
@@ -59,6 +98,8 @@ public class CameraManager : MonoBehaviour
             }*/
         }
     }
+
+
 
     private void ReturnToOrigin()
     {
