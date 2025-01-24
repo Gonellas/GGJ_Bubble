@@ -10,7 +10,8 @@ public enum SoundType
     TPSFX,
     WindSFX,
     LvlTheme,
-    NextLevelSFX
+    NextLevelSFX,
+    Click
 }
 
 public class AudioManager : MonoBehaviour

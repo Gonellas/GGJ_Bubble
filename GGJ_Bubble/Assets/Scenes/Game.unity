@@ -5959,7 +5959,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9bdd3b5a2b2305445918249129ab117a, type: 3}
   - {fileID: 8300000, guid: ff0d7255ff5d9de4eb575c575d8d4659, type: 3}
   - {fileID: 8300000, guid: 438d15ff4804a9c4aa0f195e04033589, type: 3}
-  - {fileID: 8300000, guid: 514eca6ceaaed4e4684e9b27c9f83254, type: 3}
+  - {fileID: 8300000, guid: 5a9eb5ea14a1d21439adcaf1416d76a4, type: 3}
+  - {fileID: 8300000, guid: b3d9a1607f7e30744b1c68dcb70e198d, type: 3}
   _firstAudioSourceIsPlaying: 0
   _menuScene: 0
 --- !u!4 &1130071323
