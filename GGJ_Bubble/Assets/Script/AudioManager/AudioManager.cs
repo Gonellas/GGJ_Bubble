@@ -79,8 +79,8 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        if(_menuScene == true) PlayMusic(SoundType.MenuTheme, 1);
-        else PlayMusic(SoundType.LvlTheme, 0);
+        if(_menuScene == true) PlayMusic(SoundType.MenuTheme, 0.5f);
+        else PlayMusic(SoundType.LvlTheme, 0.5f);
     }
 
     public float GetMusicVolume()
