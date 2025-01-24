@@ -9,7 +9,8 @@ public enum SoundType
     IcePUSFX,
     TPSFX,
     WindSFX,
-    LvlTheme
+    LvlTheme,
+    NextLevelSFX
 }
 
 public class AudioManager : MonoBehaviour
@@ -18,7 +19,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("Values")]
     [SerializeField] private float _musicVolume = 1.0f;
-    [SerializeField] private float _sfxVolume = 1.0f;
+    [SerializeField] private float _sfxVolume = 3.0f;
 
     private AudioSource _audioSource1;
     private AudioSource _audioSource2;

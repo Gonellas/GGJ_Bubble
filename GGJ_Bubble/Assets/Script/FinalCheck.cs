@@ -11,6 +11,7 @@ public class FinalCheck : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isBubbleInFinalCheck = true;
+            AudioManager.instance.PlaySFX(SoundType.NextLevelSFX, 2f);
         }
     }
 }
