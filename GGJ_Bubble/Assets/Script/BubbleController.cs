@@ -63,14 +63,14 @@ public class BubbleController : MonoBehaviour
     {
         frozen = true;
         frezeEndTime = Time.time + duracion;
-        spriteRenderer.color = Color.cyan;
+        animator.SetBool("Frezze", true);
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Paredes"), true);
     }
 
     public void DesactivateFreezePowerUp()
     {
         frozen = false;
-        spriteRenderer.color = originalColor;
+        animator.SetBool("Frezze", false);
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Paredes"), false);
     }
 
