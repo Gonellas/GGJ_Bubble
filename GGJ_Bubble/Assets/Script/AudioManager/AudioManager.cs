@@ -11,7 +11,9 @@ public enum SoundType
     WindSFX,
     LvlTheme,
     NextLevelSFX,
-    Click
+    Click,
+    WinTheme, 
+    LoseTheme
 }
 
 public class AudioManager : MonoBehaviour
@@ -35,7 +37,7 @@ public class AudioManager : MonoBehaviour
 
     public SoundType SoundType => _soundType;
 
-    public static AudioManager Instace
+    public static AudioManager Instance
     {
         get
         {
@@ -82,8 +84,8 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         PlayMusic(SoundType.MenuTheme, 0.5f);
-        //if (_menuScene == true) PlayMusic(SoundType.MenuTheme, 0.5f);
-        //else PlayMusic(SoundType.LvlTheme, 0.5f);
+        if (_menuScene == true) PlayMusic(SoundType.MenuTheme, 0.7f);
+        else PlayMusic(SoundType.LvlTheme, 0.5f);
     }
 
     public float GetMusicVolume()

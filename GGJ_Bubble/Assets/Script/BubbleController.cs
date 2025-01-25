@@ -96,6 +96,7 @@ public class BubbleController : MonoBehaviour
             //GameOVer
             AudioManager.instance.PlaySFX(SoundType.BurstSFX, 1f);
             Destroy(gameObject);
+            WinLoseCondition.instance.LoseGame();
         }
     }
     private void UpdateBubbleAnimationAndCollider()

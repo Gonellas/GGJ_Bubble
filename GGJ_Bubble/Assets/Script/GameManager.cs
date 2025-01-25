@@ -123,5 +123,4 @@ public class GameManager : MonoBehaviour
         Vector2 gravityDirection = -cameraTransform.up;
         Physics2D.gravity = gravityDirection * gravityStrength;
     }
-
 }

@@ -2599,6 +2599,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 438d15ff4804a9c4aa0f195e04033589, type: 3}
   - {fileID: 8300000, guid: 5a9eb5ea14a1d21439adcaf1416d76a4, type: 3}
   - {fileID: 8300000, guid: b3d9a1607f7e30744b1c68dcb70e198d, type: 3}
+  - {fileID: 8300000, guid: 638ce64256ff96146a95ea32886566d0, type: 3}
+  - {fileID: 8300000, guid: 404c5b2c47659cc4d81c10924024e71f, type: 3}
   _firstAudioSourceIsPlaying: 0
   _menuScene: 1
 --- !u!1 &1859760732

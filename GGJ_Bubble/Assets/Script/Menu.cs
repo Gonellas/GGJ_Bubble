@@ -16,6 +16,16 @@ public class Menu : MonoBehaviour
         AudioManager.instance.PlaySFX(SoundType.Click, 2f);
     }
 
+    public void MenuScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void RetryButton()
+    {
+        AudioManager.instance.ChangeMusic(SoundType.MenuTheme, 0.7f);
+    }
+
     public void ExitGame()
     {
 #if UNITY_EDITOR
