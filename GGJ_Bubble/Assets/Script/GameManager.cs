@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     // Set Instance
     private static GameManager instance = null;
 
-    public FinalCheck finalCheck;
+    public FinalCheck[] finalChecks;
     public CameraManager cameraManager;
 
     public Transform cameraTransform;
@@ -50,9 +50,13 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (finalCheck.isBubbleInFinalCheck)
+        foreach (var check in finalChecks)
         {
-            CompleteLevel();
+            if (check.isBubbleInFinalCheck)
+            {
+                CompleteLevel();
+                
+            }
         }
     }
 
@@ -104,6 +108,7 @@ public class GameManager : MonoBehaviour
         cameraTransform.position = cameraTargetPos;
         bubbleTransform.position = bubbleTargetPos;
 
+        yield return new WaitForSeconds(2f);
         //Activamos fisicas de la burbuja
 
         bubbleRigidBody.isKinematic = false;
@@ -114,6 +119,7 @@ public class GameManager : MonoBehaviour
 
         cameraManager.isReturningToOrigin = false;
         isTransitioning = false;
+        
     }
 
     private void FixedUpdate()

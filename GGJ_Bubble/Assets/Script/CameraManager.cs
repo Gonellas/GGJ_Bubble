@@ -32,6 +32,7 @@ public class CameraManager : MonoBehaviour
     {
         if (!isReturningToOrigin && !isRotatingToAngle)
         {
+            UpdateCameraPosition();
             RotateCamera();
             CheckQuickRotationInput(); 
         }
@@ -41,7 +42,17 @@ public class CameraManager : MonoBehaviour
         }
         else if (isRotatingToAngle)
         {
+            UpdateCameraPosition();
             RotateToTargetAngle();
+        }
+    }
+
+    private void UpdateCameraPosition()
+    {
+        if (bubbleTransform != null)
+        {
+            // Asegura que la cámara siga la posición de la burbuja
+            cameraTransform.position = new Vector3(bubbleTransform.position.x, bubbleTransform.position.y, cameraTransform.position.z);
         }
     }
     //
