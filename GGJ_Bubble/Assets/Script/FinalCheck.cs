@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,14 @@ public class FinalCheck : MonoBehaviour
         {
             isBubbleInFinalCheck = true;
             AudioManager.instance.PlaySFX(SoundType.NextLevelSFX, 2f);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            isBubbleInFinalCheck = false;
+           
         }
     }
 

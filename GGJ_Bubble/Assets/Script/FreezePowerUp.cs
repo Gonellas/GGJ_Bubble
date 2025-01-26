@@ -17,7 +17,7 @@ public class FreezePowerUp : MonoBehaviour
 
             AudioManager.instance.PlaySFX(SoundType.IcePUSFX, 1f);
 
-            Destroy(gameObject); 
+            
         }
     }
 }

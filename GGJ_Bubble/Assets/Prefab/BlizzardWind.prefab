@@ -165,6 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1596b384cb053f14a8679d5840bee10d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windDirection: {x: 1, y: 0}
+  windDirection: {x: 0, y: -1}
   windStrength: 1.5
   bubbleRigidBody: {fileID: 0}
