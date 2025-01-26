@@ -89,6 +89,7 @@ public class BubbleController : MonoBehaviour
         if (lives > 0)
         {
             UpdateBubbleAnimationAndCollider();
+            AudioManager.instance.PlaySFX(SoundType.BounceSFX, 0.8f);
         }
         else
         {
@@ -126,9 +127,6 @@ public class BubbleController : MonoBehaviour
         {
             Debug.LogError("CircleCollider2D no asignado en la burbuja.");
         }
-
-        AudioManager.instance.PlaySFX(SoundType.BounceSFX, 0.8f);
-       
     }
     private void BounceAway(Vector2 collisionNormal)
     {
