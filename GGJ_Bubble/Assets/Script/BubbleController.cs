@@ -11,7 +11,7 @@ public class BubbleController : MonoBehaviour
 
 
     private SpriteRenderer spriteRenderer;
-    private Color originalColor;
+
     public bool frozen = false;
     private float frezeEndTime;
 
@@ -24,7 +24,6 @@ public class BubbleController : MonoBehaviour
 
     private void Start()
     {
-        originalColor = spriteRenderer.color;
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         animator = GetComponent<Animator>();
@@ -96,6 +95,7 @@ public class BubbleController : MonoBehaviour
             //GameOVer
             AudioManager.instance.PlaySFX(SoundType.BurstSFX, 1f);
             Destroy(gameObject);
+           
             WinLoseCondition.instance.LoseGame();
         }
     }

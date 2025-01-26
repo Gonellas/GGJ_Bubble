@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public Transform[] bubblePoint;
     public Transform[] cameraPoint;
 
+    [SerializeField] private GameObject[] Levels; 
+
     public float waitBeforeTransition = 1.5f;
     public float transitionDuration = 3f;
 
@@ -61,6 +63,7 @@ public class GameManager : MonoBehaviour
             StartCoroutine(TransitionToNextLevel());
         }
     }
+
     private IEnumerator TransitionToNextLevel()
     {
         isTransitioning = true;
