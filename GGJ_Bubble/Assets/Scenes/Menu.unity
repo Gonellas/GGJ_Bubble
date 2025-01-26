@@ -2070,7 +2070,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mauro Albarrac\xEDn\nShimmy Morales\nRodrigro Fines\nCamila Gonella"
+  m_text: "Mauro Albarrac\xEDn\nShimmy Morales\nRodrigo Fines\nCamila Gonella"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6c393d2b43fe74a4a89ec299419670df, type: 2}
   m_sharedMaterial: {fileID: 4988785163894898510, guid: 6c393d2b43fe74a4a89ec299419670df, type: 2}
@@ -3150,7 +3150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mauro Albarrac\xEDn\nShimmy Morales\nRodrigro Fines\nCamila Gonella"
+  m_text: "Mauro Albarrac\xEDn\nShimmy Morales\nRodrigo Fines\nCamila Gonella"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6c393d2b43fe74a4a89ec299419670df, type: 2}
   m_sharedMaterial: {fileID: 4988785163894898510, guid: 6c393d2b43fe74a4a89ec299419670df, type: 2}
